@@ -15,7 +15,6 @@ skills/usahana-flow/                 the main flow and its playbooks
 skills/principle-check-source-first/ the one principle pstack does not have
 agents/usahana-agent.md              read-only helper for Preflight and bug tracing
 templates/usahana-models.md          copy to ~/.claude/rules/ to pick models
-templates/project-settings/          copy to docs/usahana-flow/ in each project
 ```
 
 ## Try it
@@ -28,8 +27,6 @@ claude --plugin-dir ~/Documents/usahana-flow
 
 Then run `/usahana-flow` on an issue.
 
-## Set up a project
+## Models
 
-1. Copy `templates/project-settings/` to `docs/usahana-flow/` in the project.
-2. Fill in the topic files. Delete the ones the project does not need.
-3. Copy `templates/usahana-models.md` to `~/.claude/rules/` if you want to change the models.
+To change the models, copy `templates/usahana-models.md` to `~/.claude/rules/`.

@@ -8,23 +8,15 @@ disable-model-invocation: true
 
 Each issue takes one route. Preflight picks the route. Do not pick it by feeling.
 
-## Read the project settings when you need them
-
-Each project keeps its settings in `docs/usahana-flow/`. Read `index.md` before you run Preflight. It is short. It lists the topic files and says when to read each one.
-
-Open a topic file only when a step needs it. Do not read all of them at the start.
-
-If `index.md` does not exist, ask Usahana to make one. If a step needs a topic that the index does not list, ask Usahana. Do not guess.
-
 ## Always do these
 
 - Before work starts on any issue, run **Preflight** (`playbooks/preflight.md`).
 - Check every spec against the source code before you trust it. Use **principle-check-source-first**.
 - Before you ask Usahana a question, give the evidence. Give two or three options and the cost of each one. Say which option you will use if Usahana does not answer. Send all questions in one message.
 - When there is more than one good way to build something, and you can build each way, run `/pstack:arena`. Then show the result to Usahana in lavish.
-- For every UI change, check every screen size in the project settings.
+- For every UI change, check every screen size the project uses.
 - If a migration removes or changes something, stop and ask Usahana.
-- If you find a bug after a merge, fix it with `/pstack:poteto-mode`. Then find the issue, the spec line, or the decision that caused it. Add it to the incidents topic in the project settings. If Preflight should have caught it, add a check to Preflight.
+- If you find a bug after a merge, fix it with `/pstack:poteto-mode`. Then find the issue, the spec line, or the decision that caused it. If the project keeps an incident log, add it there. If Preflight should have caught it, add a check to Preflight.
 
 ## Principles
 
@@ -45,7 +37,7 @@ From pstack. Use them as they are. Do not copy them.
 
 ## Subagents
 
-- For Preflight research and for tracing a bug, spawn `usahana-agent`. Give it the absolute path of this SKILL.md and of the project's `index.md`.
+- For Preflight research and for tracing a bug, spawn `usahana-agent`. Give it the absolute path of this SKILL.md.
 - Pick the model for each role from `~/.claude/rules/usahana-models.md`. Each line names a role and a model. If the file or the line is missing, use the default below.
   - `preflight search`: finds files, reads old code, and counts things. Default `haiku`.
   - `preflight compare`: compares the spec with the code. Default `sonnet`.

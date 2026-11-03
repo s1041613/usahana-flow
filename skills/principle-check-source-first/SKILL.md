@@ -13,7 +13,7 @@ Read the source code before you write the spec. For each rule in the spec, give 
 Read the real thing, not a summary of it:
 
 - Read the code on the main branch of the remote. Your local copy can be behind, or on another branch.
-- If the project moves features from an old system, read the old code the same way. The old-system topic in the project settings says where it is.
+- If the project moves features from an old system, read the old code the same way.
 - If the docs and the code are different, the code wins. Write down the difference.
 - If the spec and the code disagree, and someone must choose, do not choose. Ask Usahana.
 

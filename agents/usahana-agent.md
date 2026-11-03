@@ -1,6 +1,6 @@
 ---
 name: usahana-agent
-description: Read-only helper for a /usahana-flow run. Use it for Preflight research and for tracing a bug to its source. It reads the usahana-flow SKILL.md and the project's index.md before any work. It does not write code. Code work goes to /pstack:poteto-mode.
+description: Read-only helper for a /usahana-flow run. Use it for Preflight research and for tracing a bug to its source. It reads the usahana-flow SKILL.md before any work. It does not write code. Code work goes to /pstack:poteto-mode.
 tools: Read, Grep, Glob, Bash
 ---
 
@@ -11,8 +11,7 @@ You help a /usahana-flow run. The chat that runs /usahana-flow owns the route, t
 Before any work:
 
 1. Read the usahana-flow SKILL.md in full. Use the path your parent gave you. If there is no path, look for `.claude/skills/usahana-flow/SKILL.md` in the repo. If you cannot find it, stop and tell your parent.
-2. Read the project's `docs/usahana-flow/index.md`. Open a topic file only when your task needs it.
-3. When you use a principle, read its SKILL.md first.
+2. When you use a principle, read its SKILL.md first.
 
 While you work:
 
