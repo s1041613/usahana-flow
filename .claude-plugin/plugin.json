@@ -1,0 +1,8 @@
+{
+  "name": "usahana-flow",
+  "version": "0.1.0",
+  "description": "Usahana's dev flow. Run Preflight before an issue starts. Preflight picks one route: talk about business rules first, build with poteto-mode, or ask Usahana.",
+  "author": { "name": "Usahana" },
+  "repository": "https://github.com/s1041613/usahana-flow",
+  "keywords": ["workflow", "preflight", "bdd", "pstack"]
+}
